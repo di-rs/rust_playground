@@ -1,7 +1,7 @@
 [workspace]
 resolver = "3"
-members = ["crates/*", "learn/*", "learn/01_base/connection", "learn/01_base/server"]
-exclude = ["learn/01_base"]
+members = ["crates/*", "collections/*", "pointers/*", "iter/*", "async_rust/*", "async_rust/01_base/connection", "async_rust/01_base/server"]
+exclude = ["async_rust/01_base", "crates/async-crust"]
 
 [workspace.package]
 authors = ["Dima P <dimapm@pm.me>"]

@@ -115,7 +115,7 @@ impl Connection {
         let mut buf = [0u8; 12];
         let mut buf = Cursor::new(&mut buf[..]);
         write!(&mut buf, "{val}")?;
-        
+
         #[allow(clippy::cast_possible_truncation, clippy::as_conversions)]
         let pos = buf.position() as usize;
         #[allow(clippy::indexing_slicing)]

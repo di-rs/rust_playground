@@ -16,7 +16,8 @@ async fn main() -> io::Result<()> {
             loop {
                 match socket.read(&mut buf).await {
                     Ok(0) => return,
-                    Ok(n) => {
+                    Ok(n) =>
+                    {
                         #[allow(clippy::indexing_slicing)]
                         if socket.write_all(&buf[..n]).await.is_err() {
                             return;
